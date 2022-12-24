@@ -9,7 +9,6 @@ permissions:
   pages: write
   id-token: write
 
-# これを指定していると、重複してActionsが走った時に前のをキャンセルしてくれる
 concurrency:
   group: "pages"
   cancel-in-progress: true

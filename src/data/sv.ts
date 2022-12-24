@@ -3,6 +3,7 @@ export const sv: {
   name: string;
   evolution?: string;
   wild: string[];
+  index: number;
 }[] = [
   {
     no: "No.001",
@@ -5577,4 +5578,4 @@ export const sv: {
     name: "ミライドン",
     wild: [],
   },
-];
+].map((item, index) => ({ ...item, index }));
